@@ -1,0 +1,34 @@
+# Site settings
+title: 'Code for Good'
+email: 'codeforgood@mit.edu'
+description: >
+  Code for Good, 6.S187, is an IAP class at MIT that brings students together
+  with local nonprofit organizations to work on impactful computer science
+  projects.
+baseurl: '' # the subpath of your site, e.g. /blog/
+url: 'http://codeforgood.mit.edu' # the base hostname & protocol for your site
+
+# Page defaults
+defaults:
+  -
+    scope:
+      path: ''
+    values:
+      show: true
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink: pretty
+
+# Settings
+timezone: America/New_York
+analytics:
+  tracking_id: UA-53167467-3
+
+# Excludes
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

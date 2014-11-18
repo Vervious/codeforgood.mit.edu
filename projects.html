@@ -1,0 +1,25 @@
+---
+layout: page
+title: "Projects"
+---
+
+{% for organization in site.data.projects %}
+  <div class="card">
+    <hr>
+    <div class="card-col card-col-1">
+      <h3>{{ organization.name }}</h3>
+      <a href="{{ organization.web.url }}">{{ organization.web.name }}</a>
+      <br><br>
+      <p class="left-desc">{{ organization.description }}</p>
+    </div>
+    <div class="card-col card-col-2">
+      {% for project in organization.projects %}
+        <h4>{{ project.name }}</h4>
+        <p>{{ project.description }}</p>
+        {% if forloop.rindex > 1 %}
+          <hr>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
