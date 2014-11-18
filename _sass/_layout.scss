@@ -31,6 +31,10 @@
         display: none;
     }
 
+    input[type=checkbox] {
+        display: none;
+    }
+
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
@@ -74,7 +78,7 @@
             display: none;
         }
 
-        &:hover .trigger {
+        input[type=checkbox]:checked ~ .trigger {
             display: block;
             padding-bottom: 5px;
         }
