@@ -2,6 +2,12 @@
 
 This is the website for MIT Code for Good.
 
+## Building
+
+Run `bundle install` to fetch dependencies.
+
+Run `bundle exec jekyll build` to build the site.
+
 ## Web Server Configuration
 
 The web server should be configured to display `/404.html` for HTTP 404 errors.
