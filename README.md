@@ -19,5 +19,4 @@ The `master` branch contains GPG-signed tagged releases (tagged as `vX.X.X`).
 The `develop` branch is where most of the development happens.
 
 Release branches are named `release/X.X.X`, and hotfix branches are named
-`hotfix/*`. Feature branches can have any name, as long as it does not conflict
-with these naming patterns.
+`hotfix/*`. Feature branches are named `feature/*`.
